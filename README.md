@@ -9,8 +9,7 @@ Ce dépôt contient le code source d'une application React qui utilise des compo
 
 ## Installation
 
-1. Clonez le projet depuis le dépôt GitHub.
-2. Utilisez la commande `npm install` pour installer les dépendances.
+npm install modal-js-react
 
 ## Utilisation
 Pour utiliser les composants de modale, vous pouvez importer le contexte et le fournisseur de modale depuis `ModalContext.jsx` :
