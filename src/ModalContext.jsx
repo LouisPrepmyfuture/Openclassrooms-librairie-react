@@ -1,6 +1,5 @@
 import React, { createContext } from "react";
 import useModal from "./useModal.js";
-import Modal from "./Modal.jsx";
 import PropTypes from 'prop-types';
 
 let ModalContext;
@@ -13,11 +12,11 @@ let { Provider } = (ModalContext = createContext());
  * @return {JSX.Element} The rendered ModalProvider component.
  */
 
-let ModalProvider = ({ children }) => {
+const ModalProvider = ({ children }) => {
   let { modal, handleModal, contentModal, title, styleModal } = useModal();
   return (
     <Provider value={{ modal, handleModal, contentModal, title, styleModal}}>
-      <Modal/>
+      <div id="modal"></div>
       {children}
     </Provider>
   );

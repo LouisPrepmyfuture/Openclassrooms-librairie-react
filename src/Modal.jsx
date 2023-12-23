@@ -46,7 +46,7 @@ const BodyModalStyle = styled.div``;
  * @return {ReactNode} The JSX element representing the modal.
  */
 
-const Modal = () => {
+export const Modal = () => {
   let { contentModal, handleModal, title, modal, contentFooter, styleModal} = React.useContext(ModalContext);
 
   // create element div id = modal-root if null
@@ -89,4 +89,3 @@ const Modal = () => {
   } else return null;
 };
 
-export default Modal;

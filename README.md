@@ -12,16 +12,17 @@ Ce dépôt contient le code source d'une application React qui utilise des compo
 npm install modal-js-react
 
 ## Utilisation
-Pour utiliser les composants de modale, vous pouvez importer le contexte et le fournisseur de modale depuis `ModalContext.jsx` :
+Pour utiliser les composants de modal, vous pouvez importer le contexte et le fournisseur de modale depuis `"modal-js-react` :
 
 ```javascript
-import { ModalContext, ModalProvider } from "./ModalContext.jsx";
+import { ModalContext, ModalProvider, Modal} from "modal-js-react"
 ```
 
-Ensuite, vous pouvez envelopper vos composants dans le fournisseur de modale pour rendre les fonctionnalités de modale disponibles dans votre application :
+Ensuite, vous pouvez envelopper vos composants dans le fournisseur de modale pour rendre les fonctionnalités de modale disponibles dans votre application plus ajouter le composent Modal dans le provider:
 
 ```javascript
 <ModalProvider>
+  <Modal>
   {/* Vos composants */}
 </ModalProvider>
 ``````
